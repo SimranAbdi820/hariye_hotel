@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HARIYE HOTEL</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .loggo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .loggo img {
+      height: 40px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+      nav a.active {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .login-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px;
+      background-color: #fff;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+      margin-bottom: 100px;
+    }
+
+    .hero-img {
+      flex: 1;
+      text-align: right;
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 400px;
+      object-fit: cover;
+      width: 650px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    .blue {
+      color: #007bff;
+    }
+
+    .green {
+      color: #28a745;
+    }
+
+    .hero-text p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    .hero-buttons button {
+      padding: 10px 16px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .about-btn {
+      background-color: #f4a261;
+      color: white;
+    }
+
+    .book-btn {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .features {
+      padding: 40px 60px;
+      text-align: center;
+      background-color: #fafafa;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 250px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .card button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .mid-banner {
+      background-color: #38a169;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+
+    .testimonial {
+      padding: 40px 60px;
+      text-align: center;
+    }
+
+    .reviews {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .review {
+      background-color: #f1f5f9;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .review img {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .highlighted {
+      background-color: #fef3c7;
+    }
+
+    footer {
+      background-color: #007bff;
+      color: white;
+      padding: 40px 60px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      padding: 10px 16px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin: 8px 0;
+    }
+
+    .footer-contact p {
+      margin: 8px 0;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-img {
+        text-align: center;
+      }
+
+      .hero-img img {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="loggo">
+      <img src="/IMG/light_bg_logo.png" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+      </ul>
+    </nav>
+    <button class="login-btn">Login</button>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Welcome to <span class="blue">HARIYE</span> <span class="green">HOTEL</span></h2>
+      <p>Where Comfort Meets Elegance</p>
+      <p>Discover a haven of luxury and relaxation in the heart of the city. Whether you’re here for business or leisure, we offer peace, style, and exceptional service. 
+        Experience the perfect blend of comfort and sophistication. Join us for an unforgettable stay at our luxurious hotel. </p>
+      <div class="hero-buttons">
+        <button class="about-btn">About us</button>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="/IMG/aboutimg.jpg" alt="Hotel Building">
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="/IMG/Room.jpeg" alt="Room">
+        <h3>Rooms</h3>
+        <p>Elegant, comfortable, and fully equipped for your perfect stay.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="card">
+        <img src="/IMG/Restaurant.jpg" alt="Restaurant">
+        <h3>Restaurant</h3>
+        <p>Enjoy a variety of delicious local and international dishes.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="card">
+        <img src="/IMG/GYM.jpg" alt="Gym">
+        <h3>GYM</h3>
+        <p>Stay active with our modern, fully-equipped fitness center.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="mid-banner">
+    <h2>Everything you need,<br> all in one place</h2>
+  </section>
+
+  <section class="testimonial">
+    <h2>Testimonial</h2>
+    <div class="reviews">
+      <div class="review">
+        <img src="/IMG/1.jpg" alt="Omar">
+        <h4>Omar</h4>
+        <p>★★★★★</p>
+        <p>"Perfect location and top-notch facilities. Whether for business or leisure, HARIYE HOTEL never disappoints."</p>
+      </div>
+      <div class="review highlighted">
+        <img src="/IMG/2.jpg" alt="Yusuf">
+        <h4>Yusuf</h4>
+        <p>★★★★★</p>
+        <p>"The staff were welcoming, rooms spotless, and service impeccable. Definitely returning!"</p>
+      </div>
+      <div class="review">
+        <img src="/IMG/3.jpg" alt="Elmi">
+        <h4>Elmi</h4>
+        <p>★★★★★</p>
+        <p>"Elegant rooms, delicious food, and great hospitality. Unforgettable stay!"</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="contact-form">
+        <h3>Simple Contact</h3>
+        <form>
+          <input type="text" placeholder="Full name" required>
+          <input type="tel" placeholder="Phone" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="footer-links">
+        <h3>Menu</h3>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Facilities</li>
+          <li>Booking</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p>📞 +252 61 xxxxxxx</p>
+        <p>📧 example@gmail.com</p>
+        <p>📍 Mogadisho-Somalia</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>

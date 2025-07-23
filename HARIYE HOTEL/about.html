@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HARIYE HOTEL</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo-area {
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-area img {
+      height: 40px;
+    }
+
+    .logo-text {
+      font-size: 22px;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .logo-text span {
+      color: #28a745;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a.active {
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .login-btn {
+      background-color: #0052cc;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+    .section {
+      padding: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .section-content {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .section-content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .section-content h2 span {
+      color: #007bff;
+    }
+
+    .section-content h2 span.green {
+      color: #28a745;
+    }
+
+    .section-content p {
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .section-img {
+      flex: 1;
+      min-width: 300px;
+      height: 400px;
+    }
+
+    .section-img img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      height: 400px;
+    }
+
+    footer {
+      background-color: #007bff;
+      color: white;
+      padding: 60px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .contact-form {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .contact-form h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      border: none;
+      background-color: white;
+      color: #1e3a8a;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .footer-menu {
+      flex: 1;
+      min-width: 150px;
+    }
+
+    .footer-menu h3,
+    .footer-contact h3 {
+      margin-bottom: 10px;
+    }
+
+    .footer-menu ul {
+      list-style: none;
+    }
+
+    .footer-menu li {
+      margin: 8px 0;
+    }
+
+    .footer-contact {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer-contact p {
+      margin: 8px 0;
+    }
+
+    .footer-contact .logo-text {
+      font-size: 18px;
+    }
+
+    .copyright {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <img src="logo.png" alt="Logo">
+      <div class="logo-text">HARIYE <span class="green">HOTEL</span></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#about" class="active">About Us</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+      </ul>
+    </nav>
+    <button class="login-btn">Login</button>
+  </header>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="section-content">
+      <h2>ABOUT <span>HARIYE</span> <span class="green">HOTEL</span></h2>
+      <p>
+        Welcome to Hariye Hotel — where elegance meets genuine hospitality. Located in the heart of the city, our hotel is designed for travelers who seek comfort, style, and personalized service.
+        <br><br>
+        We offer modern, well-appointed rooms, a fine restaurant, a fully equipped gym, and various special event spaces. Whether you're here for business, leisure, or a special occasion, Hariye Hotel promises an experience that is both relaxing and memorable.
+        <br><br>
+        Your satisfaction is at the heart of everything we do.
+      </p>
+    </div>
+    <div class="section-img">
+      <img src="about1.jpg" alt="Hotel Interior">
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section class="section reverse">
+    <div class="section-img">
+      <img src="about2.jpg" alt="Lobby Image">
+    </div>
+    <div class="section-content">
+      <h2>Mission & Values</h2>
+      <p>
+        At Hariye Hotel, our mission is to provide exceptional hospitality by offering a blend of luxury, comfort, and personalized service. We are dedicated to ensuring that every guest feels valued, relaxed, and inspired throughout their stay with us.
+        <br><br>
+        We go beyond the ordinary to meet every need. Hospitality is at the heart of our service — we welcome every guest with the highest care. Standards are kept at elite levels, ensuring comfort and class.
+        <br><br>
+        Our values reflect integrity, respect, innovation, and sustainability. We are committed to sustainable practices, ensuring our services are responsible and eco-friendly for a better future.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="contact-form">
+        <h3>Simple Contact</h3>
+        <form>
+          <input type="text" placeholder="Full name" required>
+          <input type="tel" placeholder="Phone" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Message" rows="4" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="footer-menu">
+        <h3>Menu</h3>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Facilities</li>
+          <li>Booking</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <div class="logo-text">HARIYE <span class="green">HOTEL</span></div>
+        <p>📞 +252 61 xxxxxxx</p>
+        <p>📧 hariye@gmail.com</p>
+        <p>📍 Mogadisho-Somalia</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Hariye Hotel. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,600 @@
+/* Universal Style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.page_container {
+    max-width: 80%;
+    margin: auto;
+}
+
+body {
+    background-color: #f9f6f4;
+}
+
+/* Header START */
+header {
+    width: 80%;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f6f4;
+    /* box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.6); */
+    /* border-bottom: 1px solid #000; */
+    z-index: 99;
+}
+
+.logo {
+    padding-top: 5px;
+}
+
+nav {
+    height: 80px;
+    background-color: #f9f6f4;
+}
+
+ul {
+    height: 70px;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+
+}
+
+ul li {
+    list-style: none;
+    /* margin-bottom: 8px; */
+}
+
+ul li a:hover {
+    color: blue;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 0px 15px;
+    color: #000;
+
+}
+
+nav a.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.login_btn {
+    height: 70px;
+    display: flex;
+    align-items: end;
+}
+
+.login_btn button {
+    padding: 10px 20px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* margin-right: 10px; */
+    /* margin-bottom: 8px; */
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fff;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    border: none;
+    padding: 0px 15px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown #active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f6f4;
+    max-width: 105px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Header END */
+
+/* Home Page START */
+
+main {
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 70px; */
+    background-color: #f9f6f4;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* box-shadow: 10px 0px 0px 0px rgba(0,0,0,0.6); */
+
+}
+
+.hero-text {
+    flex: 1;
+    /* margin-bottom: 100px; */
+}
+
+.hero-img {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-img img {
+    max-width: 100%;
+    /* max-height: 350px; */
+    border-radius: 10px;
+    height: 400px;
+    object-fit: cover;
+    width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.blue {
+    color: #007bff;
+}
+
+.green {
+    color: #28a745;
+}
+
+.hero-text p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.hero-buttons button {
+    padding: 10px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.about-btn {
+    background-color: #f4a261;
+    color: white;
+}
+
+.book-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.features {
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 40px 60px;
+    text-align: center;
+    background-color: #fafafa;
+    height: 100vh;
+}
+
+.features h2 {
+    /* width: 100; */
+    display: block;
+}
+
+#sub-title {
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 30px; */
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* padding: 15px; */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 400px;
+}
+
+.img_container {
+    height: 55%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.room_img_container {
+    height: 55%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(IMG/Room.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.restaurant_img_container {
+    height: 55%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(IMG/Restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gym_img_container {
+    height: 55%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    background-image: url(IMG/GYM.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#st_room {
+    background-image: url(IMG/Room.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#d_room {
+    background-image: url(IMG/Room2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#su_room {
+    background-image: url(IMG/Room3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#break_fast {
+    background-image: url(IMG/Break\ _fast.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#i_food {
+    background-image: url(IMG/international_food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#l_food {
+    background-image: url(IMG/local_food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#f_gym {
+    background-image: url(IMG/GYM.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#s_gym {
+    background-image: url(IMG/strength.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#w_gym {
+    background-image: url(IMG/wellness.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info_container {
+    height: 200px;
+    display: block;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.card .price {
+    color: #333;
+    font-weight: bold;
+    font-size: 17px;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+}
+
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.mid-banner {
+    background-color: #38a169;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    display: block;
+    /* margin-left: 0; */
+
+}
+
+.testimonial {
+    padding: 40px 60px;
+    text-align: center;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.review {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review img {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.highlighted {
+    background-color: #fef3c7;
+}
+
+
+/* Booking START */
+
+.booking {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.booking h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.booking button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Book END */
+
+
+/* Contact START */
+
+.contact_container {
+    height: 80vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c_contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    margin: 40px auto;
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.c_contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px 16px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 40px 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px 16px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        text-align: center;
+    }
+
+    .hero-img img {
+        height: auto;
+    }
+}
