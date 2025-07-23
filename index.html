@@ -25,7 +25,55 @@
       align-items: center;
       border-bottom: 1px solid #ddd;
     }
+    .dropdown {
+    float: left;
+    overflow: hidden;
+}
 
+/* Dropdown button */
+.dropdown .dropbtn {
+    border: none;
+    padding: 0px 15px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown #active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f6f4;
+    max-width: 105px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
     .loggo {
       display: flex;
       align-items: center;
@@ -282,10 +330,18 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="#index.html" class="active">Home</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <div class="dropdown">
+          <li><a href="#Facilities" class="dropbtn">Facilities</a></li>
+          <div class="dropdown-content">
+            <a href="Rooms.html">Rooms</a>
+            <a href="Restaurant.html">Restaurant</a>
+            <a href="GYM.html">GYM</a>
+          </div>
+        </div>
+        <li><a href="Booking.html">Booking</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
       </ul>
     </nav>
     <button class="login-btn">Login</button>
